@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab01_1
+namespace Lab01_02
 {
     internal class Student
     {
@@ -18,16 +18,14 @@ namespace Lab01_1
         public string FullName { get => fullName; set => fullName = value; }
         public float AverageScore
         {
-            get => averageScore; set => averageScore =
-        value;
+            get => averageScore; set => averageScore = value;
         }
         public string Faculty { get => faculty; set => faculty = value; }
         //3.Constructor
         public Student()
         {
         }
-        public Student(string studentID, string fullName, float averageScore, string
-        faculty)
+        public Student(string studentID, string fullName, float averageScore, string faculty)
         {
             this.studentID = studentID;
             this.fullName = fullName;
@@ -48,8 +46,8 @@ namespace Lab01_1
         }
         public void Show()
         {
-            Console.WriteLine("MSSV:{0} Họ Tên:{1} Khoa:{2} ĐiêmTB:{3}",
-            this.StudentID, this.fullName, this.Faculty, this.AverageScore);
+            Console.WriteLine("MSSV:{0} | Họ Tên:{1}| Khoa:{2}| ĐiêmTB:{3}",
+            this.StudentID, this.FullName, this.Faculty, this.AverageScore);
         }
     }
 }
